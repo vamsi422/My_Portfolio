@@ -5,10 +5,14 @@ import SignIn from './pages/SignIn'
 import SignOut from './pages/SignOut'
 import About from './pages/About'
 import Profile from './pages/Profile'
+import Header from './components/Header'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div className="bg-gray-100">
+
+    <BrowserRouter >
+    <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>        
@@ -19,6 +23,7 @@ const App = () => {
         
       </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 
